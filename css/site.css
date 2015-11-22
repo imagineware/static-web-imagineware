@@ -1,0 +1,620 @@
+body {
+    padding-bottom: 20px;
+    background: #EEEEEE;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+
+/* Sitios generales*/
+.site-home, .site-beer {
+    text-align:center !important;
+}
+
+.course, .hoc {
+  margin-top: 105px;
+}
+
+
+
+/* Generic */
+
+.grey-background {
+    background: #EEEEEE;
+}
+
+.margin-top-big {
+    margin-top: 160px;
+}
+
+.margin-bottom-big {
+    margin-bottom: 80px;
+}
+
+
+
+/* Carousel */
+
+
+.carousel-caption {
+    z-index: 10 !important;
+}
+
+    .carousel-caption p {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+@media (min-width: 768px) {
+    .carousel-caption {
+        z-index: 10 !important;
+    }
+}
+
+/* Layout */
+
+.navbar-inverse {
+    border: none;
+    background-color: rgba(33, 33, 33, 0.8);
+}
+
+.upper-navbar {
+    height: 24px;
+    background-color: rgba(33, 33, 33, 0.6);
+   padding-right: 12px;
+
+}
+
+.upper-navbar i {
+    color: #FFF;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 6px;
+}
+
+.upper-navbar i:hover {
+    color: #CCC;
+}
+
+.lower-navbar {
+    height: 64px;
+    background: none;
+    margin-right: 0;
+    padding-right: 8px;
+}
+
+.navbar-brand {
+    padding-top: 5px;
+    padding-left: 30px;
+    padding-bottom: 11px;
+    padding-right: 30px;
+}
+
+.navbar-nav {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.navbar-header, .navbar-nav {
+    padding-top: 6px;
+}
+
+.navbar-collapse.in {
+    background-color: rgba(33, 33, 33, 0.8);
+}
+
+/* Home Index */
+
+/* Creo que esta es la solución que se le puede dar a la alineación vertical del texto, en sustitución por la propuesta en h2 entre comentarios */
+.background-home .container, .box, .background-curses .container, .background-beer .container, .background-log .container, .background-events-details .container {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.container {
+    max-width: 1000px;
+}
+
+.background-home {
+    background: url(../images/tic-bkg.jpg) no-repeat center;
+    background-size:cover;
+    height: 100vh;
+}
+
+.background-beer {
+    background: url(../images/beer.png) no-repeat center;
+    background-size:cover;
+    padding-top:2px;
+    height:100vh;
+    margin-bottom:60px;
+}
+
+.background-curses {
+    background: url(../images/curses.jpg) no-repeat center;
+    background-size:cover;
+    height: 100vh;
+}
+
+.background-log {
+    background: url(../images/save_data.jpg) no-repeat center;
+    background-size:cover;
+    height: 100vh;
+}
+
+.background-log h2 {
+  color: white;
+}
+
+.background-events-details {
+    background: url(../images/hourofcode/preuba_hoc_web.png) no-repeat center;
+    background-size:cover;
+    padding-top: 128px;
+
+}
+
+.background-curses .container, .background-beer .container, .background-log .container, .background-events-details .container {
+    text-align: center;
+}
+
+.background-events-details .container {
+  padding-top: 140px;
+}
+
+.background-events-details .container > .row{
+  background: rgba(0,0,0,0.3);
+  border-radius:30px;
+  margin-top:90px;
+}
+
+h2{
+    color: rgb(255, 158, 0);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 1.4em;
+    opacity: 1;
+    text-shadow: 1px 1px 0px rgb(170, 105, 0);
+    text-align:center;
+}
+
+h3 {
+    color: rgb(51, 51, 51);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 1.4em;
+    opacity: 1;
+}
+
+h4 {
+    color: rgb(216, 216, 216);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 1.4em;
+    opacity: 1;
+    text-align: center;
+}
+p {
+    color: rgb(136, 136, 136);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: 1.4em;
+    opacity: 1;
+    margin: 0 0 60px;
+}
+
+.background-home p, .background-curses p, .background-beer p, .background-log p{
+    color: rgb(252, 252, 252);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: 1.2em;
+    opacity: 1;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+    max-width:430px;
+    margin: 0 auto;
+    text-align:center;
+}
+
+.section-activities{
+    background-color: rgb(66, 66, 66);
+    border-radius: 0px;
+    opacity: 1;
+}
+
+/* Esto sería mejor hacerlo con invertir color en el .less*/
+.section-activities h3, h4 {
+    color: rgb(216, 216, 216);
+}
+.section-activities p {
+    color: rgb(172, 172, 172);
+}
+
+/* Esto sería mejor hacerlo con invertir color en el .less*/
+.section-beer h3, .section-beer h4 {
+    color: rgb(51, 51, 51);
+}
+.section-beer p {
+    color: rgb(136, 136, 136);
+}
+
+.section-members img {
+    margin: 15px 15px;
+}
+
+.section-activities i , .section-beer i{
+    color: rgb(255, 158, 0);
+    font-family: FontAwesome;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 1.4em;
+    opacity: 1;
+    text-align: left;
+
+}
+/* Registro y login */
+
+.submit, .login {
+    width: 100%;
+    text-align:center;
+    margin: 10px auto;
+}
+
+.submit .btn-default, .login .btn-default, .login .checkbox, .curse .btn-default {
+    margin: 0px auto;
+}
+
+
+.box {
+    max-width:365px;
+    max-height:520px;
+    min-height:520px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    background-color: rgb(252, 252, 252);
+    margin: auto auto;
+    border: 1px double;
+    border-color: rgb(255, 158, 0);
+    border-radius:5px;
+}
+
+.form-control {
+    border:0px;
+    border-bottom:2px double;
+    border-bottom-color:rgb(255, 158, 0);
+    margin: auto auto;
+}
+
+.box p {
+    color: rgb(255, 158, 0);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: 1.4em;
+    opacity: 1;
+    text-align: center;
+    margin-bottom: auto;
+}
+
+.box h3 {
+    color: #333;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: 1.4em;
+    opacity: 1;
+    text-align: left;
+    margin-left:10px;
+}
+
+.box h4 {
+    color: rgb(118, 118, 118);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: 1.4em;
+	opacity: 1;
+    text-align: left;
+    margin-left:15px;
+}
+
+/* Lista de cursos */
+
+.site-hoc .card h2 {
+  font-weight: 700;
+}
+
+.course, .events, .hoc {
+    padding: 15px;
+}
+
+.course .card {
+    display: block;
+    height:700px;
+    max-height:700px;
+}
+
+.events .card {
+    display: block;
+    height:700px;
+    max-height:700px;
+}
+
+.hoc .card {
+    display: block;
+    height:700px;
+    max-height:700px;
+}
+
+.hoc .card img {
+    max-height:110px;
+    max-width:110px;
+    padding-top: 10px;
+}
+
+.card-center {
+  text-align: center;
+}
+
+.course .category span , .events .category span, .hoc .category .span {
+    background-color: rgb(22, 200, 140);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.course .category img, .events .category img {
+    border: 4px double;
+    border-color: black;
+    border-radius: 6px;
+    max-height:100px;
+    max-width:100px;
+}
+
+.course .btn-default, .events .btn-default {
+    padding: 10px;
+    min-width:100px;
+}
+
+.curse {
+    width: 100%;
+    min-height: 100px;
+    background-color: rgb(170, 164, 164);
+    border: 2px double;
+    border-radius: 10px;
+    border-color: rgb(255, 158, 0);
+    text-align: left;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/*.curse .btn-default{
+    padding: 10px;
+}
+
+.curse .curse-name a {
+    color: rgb(252, 117, 0);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.7px;
+    line-height: 1.5
+}
+
+.curse span {
+    color: #333;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 1.4em;
+    opacity: 1;
+    text-align: left;
+}
+
+.curse .category span {
+    background-color: rgb(22, 200, 140);
+    border-radius: 5px;
+}*/
+
+/*@// {
+    TODO: falta por colocar center línea los tres div symbol ponerlos responsivos;
+}
+/*.curses, .beer, .charlas {
+    max-width:280px;
+}
+.charlas {
+    float: right;
+}
+.curses {
+    float: left;
+}
+.beer{
+    position:relative;
+    margin:0 auto;
+}*/
+
+/* Material-style card */
+
+.card {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.card h2 {
+    color: #333;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    margin-top: -6px;
+    text-align: left;
+    text-shadow: none;
+}
+
+.card h3 {
+    color: rgb(255, 158, 0);
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: 1.4em;
+	text-align: left;
+}
+
+.card a {
+  text-decoration: underline;
+}
+
+.square {
+    float:left;
+    position: relative;
+    width: 30%;
+    padding-bottom : 30%; /* = width for a 1:1 aspect ratio */
+    margin:1.66%;
+    background-color:#1E1E1E;
+    overflow:hidden;
+}
+
+.content {
+    position:absolute;
+    height:100%;
+    width:100%;
+    padding: 5%;
+    background-color:rgba(0,0,0,0.8);
+
+}
+.table{
+    display:table;
+    width:100%;
+    height:100%;
+}
+.table-cell{
+    display:table-cell;
+    vertical-align:middle;
+}
+
+
+
+/*  For responsive images */
+
+.content .rs{
+    width:auto;
+    height:auto;
+    max-height:100%;
+    max-width:100%;
+}
+/*  For responsive images as background */
+
+.bg{
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover; /* you change this to "contain" if you don't want the images to be cropped */
+    color:#fff;
+}
+
+.img1{
+    background-image: url('/images/avatar.jpeg');
+}
+.content{
+   visibility:hidden;
+}
+.square:hover .content{
+    visibility:visible;
+}
+.square *{
+    color:white;
+
+}
+.square h3{
+    font-size:40px;
+}
+.square p{
+    font-size:15px;
+}
+
+.redes-sociales-miembros a:hover{
+    text-decoration:none;
+    color:rgb(255, 158, 0);
+    cursor:pointer;
+}
+.redes-sociales-miembros a:focus{
+    text-decoration:none;
+    color:rgb(255, 158, 0);
+    cursor:pointer;
+}
+img{
+    max-width:100%;
+}
+a{
+    color:inherit;
+}
+a:hover,a:focus{
+    color:rgb(255, 158, 0);
+    text-decoration:none;
+}
+
+.btn-imagineware {
+    min-width:220px;
+    color: rgba(255, 255, 255, 0.89);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: normal;
+    line-height: 1.4em;
+    opacity: 1;
+    background-color: rgb(255, 158, 0);
+    border-radius: 0px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    padding: 25px 30px;
+    margin-top:60px;
+}
+
+.box-exito{
+    position:fixed;
+    margin-top:50vh;
+    padding:40px;
+    border-radius:20px;
+    z-index:100;
+}
+
+.carrousel-principal {
+    padding-top: 70px;
+    max-width: 600px;
+    max-height: 600px;
+    margin: 0 auto;
+}
+
+.carrousel-principal > h2:first-child {
+    margin-bottom: -5px;
+
+}
