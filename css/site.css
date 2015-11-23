@@ -17,7 +17,7 @@ body {
     text-align:center !important;
 }
 
-.course, .hoc {
+.course {
   margin-top: 105px;
 }
 
@@ -162,7 +162,7 @@ body {
 
 }
 
-.background-curses .container, .background-beer .container, .background-log .container, .background-events-details .container {
+.background-curses .container, .background-beer .container, .background-log .container, .background-events-details .container, .site-hoc-up .grey-background .container {
     text-align: center;
 }
 
